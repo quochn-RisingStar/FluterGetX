@@ -1,0 +1,44 @@
+default_platform(:android)
+
+platform :android do
+
+    desc 'For develop build android test'
+    lane :develop do
+        gradle(
+            task: 'assemble',
+            build_type: 'Release',
+            properties: {
+                'dart-defines' => Base64.encode64('FLAVOR=prod')
+            }
+          )
+    end
+
+    desc 'For develop build android staging'
+    lane :staging do |options|
+        gradle(
+            task: 'assemble',
+            build_type: 'Release',
+            properties: {
+                'dart-defines' => Base64.encode64('FLAVOR=prod')
+            }
+          )
+
+        firebase_app_distribution(
+            app: '',
+            firebase_cli_token: '',
+            testers: '',
+            android_artifact_path: '../build/app/outputs/flutter-apk/app-release.apk'
+        )
+    end
+
+    desc 'For production build android'
+    lane :production do
+        gradle(
+            task: 'assemble',
+            build_type: 'Realse',
+            properties: {
+                'dart-defines' => Base64.encode64('FLAVOR=prod')
+            }
+        )
+    end
+end

@@ -1,0 +1,1 @@
+ /Users/nitrotechasia/WorkspaceiOS/FlutterGetX/.dart_tool/flutter_build/a2152b41c314fc12422bc323b1d84c15/native_assets.yaml: 

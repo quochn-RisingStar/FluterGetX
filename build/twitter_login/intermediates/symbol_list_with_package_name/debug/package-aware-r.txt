@@ -1,0 +1,2 @@
+com.maru.twitter_login
+layout chrome_custom_tab

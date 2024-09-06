@@ -1,0 +1,104 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "FlutterGetX (dev)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=dev"
+            ]
+        },
+        {
+            "name": "FlutterGetX (staging)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "FlutterGetX (prod)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=prod"
+            ]
+        },
+        {
+            "name": "FlutterGetX (profile mode - dev)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=dev"
+            ]
+        },
+        {
+            "name": "FlutterGetX (profile mode - staging)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "FlutterGetX (profile mode - prod)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=prod"
+            ]
+        },
+        {
+            "name": "FlutterGetX (release mode - dev)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=dev"
+            ]
+        },
+        {
+            "name": "FlutterGetX (release mode - staging)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=staging"
+            ]
+        },
+        {
+            "name": "FlutterGetX (release mode - prod)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart",
+            "args": [
+                "--dart-define",
+                "FLAVOR=prod"
+            ]
+        }
+    ]
+}
